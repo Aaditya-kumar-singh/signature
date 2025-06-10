@@ -1,8 +1,8 @@
 import axios from 'axios';
 
 // ✅ Use Vite's import.meta.env for environment variables
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
-const BASE_URL = import.meta.env.VITE_API_URL ? import.meta.env.VITE_API_URL.replace('/api', '') : 'http://localhost:5000';
+const API_URL = import.meta.env.VITE_API_URL || 'https://digitalsignaturebackend.onrender.com/api';
+const BASE_URL = import.meta.env.VITE_API_URL ? import.meta.env.VITE_API_URL.replace('/api', '') : 'https://digitalsignaturebackend.onrender.com';
 
 // Create axios instance
 const api = axios.create({
