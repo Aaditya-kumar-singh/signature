@@ -11,10 +11,7 @@ const app = express();
 // Security middleware
 app.use(helmet());
 app.use(cors({
-  const allowedOrigins = [
-  process.env.CLIENT_URL || 'http://localhost:3000',
-  'https://digitalsignaturefrontend.onrender.com'
-];
+origin: process.env.CLIENT_URL || 'https://digitalsignaturefrontend.onrender.com', 
   credentials: true
 }));
 
